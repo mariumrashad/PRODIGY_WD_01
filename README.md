@@ -29,3 +29,7 @@ This task was completed as part of the *Prodigy Infotech Web Development Interns
 3. Scroll or hover over the menu to see effects.
 
 ---
+
+# 🌐 Live Demo
+Check out the live site here: [task01prodigy.netlify.app](https://task01prodigy.netlify.app)
+
