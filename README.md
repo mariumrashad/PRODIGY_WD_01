@@ -1,4 +1,3 @@
-Marium Rashad, [02/08/2025 09:21 PM]
 # PRODIGY_WD_01
 A responsive landing page with an interactive navigation menu that:
 - Changes color or style when the page is scrolled.
