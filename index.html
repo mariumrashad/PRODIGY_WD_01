@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brew Haven</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+<link rel="stylesheet" href="styles.css" />    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <a href="#" class="logo">
+        <img class="logoimage" src="images/beanlogo-removebg-preview.png" />
+        Brew<span>Haven</span></a
+      >
+      <div class="menu-toggle" id="menuToggle">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="28"
+          height="28"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </div>
+      <nav id="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#featured">Menu</a></li>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="hero-content reveal">
+        <h1>
+          Crafted Perfection in <span class="highlight-text">Every Cup</span>
+        </h1>
+        <p>
+          Dive deep into the world of artisan coffee. We hand-select beans from
+          sustainable farms, roast them to perfection, and brew with
+          unparalleled passion. Your ultimate coffee experience awaits.
+        </p>
+        <div class="hero-btns">
+          <a href="#featured" class="btn btn-primary" id="exploreBtn">
+            Explore Our Menu <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn btn-outline-light">Visit Our Cafe</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="promo-ticker">
+      <div class="ticker-wrapper">
+        <div class="ticker-content">
+          <span>☕ Get 10% Off Your First Order</span>
+          <span>☕ Free Delivery in The UK</span>
+          <span>☕ Taste For Everyone</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured" id="featured">
+      <div class="section-title reveal">
+        <img src="images/coffee.png" alt="coffee bean" class="coffee-bean-icon" />
+        <h2>Brew's Menu</h2>
+        <p>
+          Explore an exquisite collection of hot and cold coffee creations, each
+          a masterpiece crafted with passion and precision.
+        </p>
+      </div>
+
+      <div class="menu-categories reveal">
+        <button class="menu-tab active" data-category="hot-coffee">
+          Hot Coffee
+        </button>
+        <button class="menu-tab" data-category="cold-coffee">
+          Cold Coffee
+        </button>
+      </div>
+
+      <div class="menu-content">
+        <div class="products category-hot-coffee active" id="hot-coffee">
+          <div class="slider-container">
+            <div class="slider-wrapper">
+              <div class="product-card reveal">
+                <div class="product-img">
+                  <img
+                    src="images/darkroasted.png"
+                    alt="Dark roasted espresso in a small white cup with crema on top"
+                  />
+                </div>
+                <div class="product-content">
+                  <h3 class="product-title">Morning Espresso</h3>
+                  <p class="product-desc">
+                    Our bold, rich espresso, profound notes of dark chocolate
+                    and a hint of sweet caramel.
+                  </p>
+                  <div class="product-actions">
+                    <span class="product-price-old">$4.50</span>
+                    <span class="product-price">$3.50</span>
+                    <button class="btn btn-buy-now">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card reveal">
+                <div class="product-img">
+                  <img
+                    src="images/latte.png"
+                    alt="Latte with intricate leaf pattern art in a large ceramic cup"
+                  />
+                </div>
+                <div class="product-content">
+                  <h3 class="product-title">Honey Vanilla Latte</h3>
+                  <p class="product-desc">
+                    Harmonious blend of smooth espresso, steamed milk, pure
+                    vanilla, and locally sourced honey.
+                  </p>
+                  <div class="product-actions">
+                    <span class="product-price">$3.50</span>
+                    <button class="btn btn-buy-now">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card reveal">
+                <div class="product-img">
+                  <img
+                    src="images/Dry-Cappuccino.png"
+                    alt="Cappuccino with foam art"
+                  />
+                </div>
+                <div class="product-content">
+                  <h3 class="product-title">Classic Cappuccino</h3>
+                  <p class="product-desc">
+                    Perfectly balanced espresso, steamed milk, and a generous
+                    layer of velvety foam. A timeless favorite.
+                  </p>
+                  <div class="product-actions">
+                    <span class="product-price-old">$4.50</span>
+                    <span class="product-price">$3.50</span>
+                    <button class="btn btn-buy-now">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card reveal">
+                <div class="product-img">
+                  <img
+                    src="images/mocca.jpg"
+                    alt="Mocha with whipped cream and chocolate drizzle"
+                  />
+                </div>
+                <div class="product-content">
+                  <h3 class="product-title">Rich Chocolate Mocha</h3>
+                  <p class="product-desc">
+                    Decadent blend of espresso, rich chocolate, steamed milk,
+                    topped with whipped cream and chocolate drizzle.
+                  </p>
+                  <div class="product-actions">
+                    <span class="product-price">$3.50</span>
+                    <button class="btn btn-buy-now">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card reveal">
+                <div class="product-img">
+                  <img src="images/amricano.jpg" alt="Americano in a ceramic mug" />
+                </div>
+                <div class="product-content">
+                  <h3 class="product-title">Bold Americano</h3>
+                  <p class="product-desc">
+                    Simple yet powerful. Hot water poured over fresh espresso
+                    for a strong, pure coffee experience.
+                  </p>
+                  <div class="product-actions">
+                    <span class="product-price">$3.50</span>
+                    <button class="btn btn-buy-now">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card reveal">
+                <div class="product-img">
+                  <img
+                    src="images/hotchocolatewithcoffe.jpg"
+                    alt="Hot chocolate with coffee beans"
+                  />
+                </div>
+                <div class="product-content">
+                  <h3 class="product-title">Hot Chocolate with coffee</h3>
+                  <p class="product-desc">
+                    Decadent blend of espresso, rich chocolate, steamed milk,
+                    topped with whipped cream and chocolate drizzle.
+                  </p>
+                  <div class="product-actions">
+                    <span class="product-price">$3.50</span>
+                    <button class="btn btn-buy-now">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card reveal">
+                <div class="product-img">
+                  <img src="images/Classic.jpg" alt="Classic coffee" />
+                </div>
+                <div class="product-content">
+                  <h3 class="product-title">Classic coffee</h3>
+                  <p class="product-desc">
+                    Decadent blend of espresso, rich chocolate, steamed milk,
+                    topped with whipped cream and chocolate drizzle.
+                  </p>
+                  <div class="product-actions">
+                    <span class="product-price">$3.50</span>
+                    <button class="btn btn-buy-now">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card reveal">
+                <div class="product-img">
+                  <img src="images/cappuccino.jpg" alt="Cappuccino" />
+                </div>
+                <div class="product-content">
+                  <h3 class="product-title">Cappuccino</h3>
+                  <p class="product-desc">
+                    Decadent blend of espresso, rich chocolate, steamed milk,
+                    topped with whipped cream and chocolate drizzle.
+                  </p>
+                  <div class="product-actions">
+                    <span class="product-price">$3.50</span>
+                    <button class="btn btn-buy-now">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card reveal">
+                <div class="product-img">
+                  <img src="images/icedamericano.jpg" alt="Americano" />
+                </div>
+                <div class="product-content">
+                  <h3 class="product-title">Americano</h3>
+                  <p class="product-desc">
+                    Decadent blend of espresso, rich chocolate, steamed milk,
+                    topped with whipped cream and chocolate drizzle.
+                  </p>
+                  <div class="product-actions">
+                    <span class="product-price">$3.50</span>
+                    <button class="btn btn-buy-now">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-navigation">
+              <button class="slider-arrow left-arrow" aria-label="Previous Slide">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="slider-arrow right-arrow" aria-label="Next Slide">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="products category-cold-coffee" id="cold-coffee">
+          <div class="slider-container">
+            <div class="slider-wrapper">
+              <div class="product-card reveal">
+                <div class="product-img">
+                  <img
+                    src="images/coldbrew.jpg"
+                    alt="Iced coffee with milk swirl in a glass with condensation"
+                  />
+                </div>
+                <div class="product-content">
+                  <h3 class="product-title">Cold Brew Delight</h3>
+                  <p class="product-desc">
+                    Our signature 12-hour cold brew, incredibly smooth with
+                    notes of toasted nuts and citrus.
+                  </p>
+                  <div class="product-actions">
+                    <span class="product-price">$3.50</span>
+                    <button class="btn btn-buy-now">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card reveal">
+                <div class="product-img">
+                  <img src="images/icedlatte.jpg" alt="Iced Latte with straw" />
+                </div>
+                <div class="product-content">
+                  <h3 class="product-title">Iced Caramel Macchiato</h3>
+                  <p class="product-desc">
+                    Espresso, cold milk, vanilla syrup, and a luscious drizzle
+                    of caramel over ice. Sweet and refreshing.
+                  </p>
+                  <div class="product-actions">
+                    <span class="product-price">$3.50</span>
+                    <button class="btn btn-buy-now">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card reveal">
+                <div class="product-img">
+                  <img
+                    src="images/frab.jpg"
+                    alt="Blended Frappuccino with whipped cream"
+                  />
+                </div>
+                <div class="product-content">
+                  <h3 class="product-title">Coffee Frappuccino</h3>
+                  <p class="product-desc">
+                    Our creamy, blended coffee perfection, topped with whipped
+                    cream. Your ultimate frozen treat.
+                  </p>
+                  <div class="product-actions">
+                    <span class="product-price">$3.50</span>
+                    <button class="btn btn-buy-now">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card reveal">
+                <div class="product-img">
+                  <img src="images/espresso.jpg" alt="Sparkling espresso tonic" />
+                </div>
+                <div class="product-content">
+                  <h3 class="product-title">Espresso Tonic Twist</h3>
+                  <p class="product-desc">
+                    A unique and refreshing blend of sparkling tonic water and a
+                    shot of rich espresso. Unexpectedly delightful.
+                  </p>
+                  <div class="product-actions">
+                    <span class="product-price">$3.50</span>
+                    <button class="btn btn-buy-now">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card reveal">
+                <div class="product-img">
+                  <img src="images/iced.jpg" alt="Iced mocha with chocolate syrup" />
+                </div>
+                <div class="product-content">
+                  <h3 class="product-title">Iced Dark Mocha</h3>
+                  <p class="product-desc">
+                    Chilled espresso, rich dark chocolate, and milk over ice. A
+                    cool and intense chocolate-coffee fusion.
+                  </p>
+                  <div class="product-actions">
+                    <span class="product-price">$3.50</span>
+                    <button class="btn btn-buy-now">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card reveal">
+                <div class="product-img">
+                  <img src="images/Mochamagic.jpg" alt="Mocha Magic with chocolate" />
+                </div>
+                <div class="product-content">
+                  <h3 class="product-title">Mocha Magic with chocolate</h3>
+                  <p class="product-desc">
+                    Our signature 12-hour cold brew, incredibly smooth with
+                    notes of toasted nuts and citrus.
+                  </p>
+                  <div class="product-actions">
+                    <span class="product-price">$3.50</span>
+                    <button class="btn btn-buy-now">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card reveal">
+                <div class="product-img">
+                  <img src="images/coconut.jpg" alt="Coconut Vanilla Cold Brew" />
+                </div>
+                <div class="product-content">
+                  <h3 class="product-title">Coconut Vanilla Cold Brew</h3>
+                  <p class="product-desc">
+                    Our signature 12-hour cold brew, incredibly smooth with
+                    notes of toasted nuts and citrus.
+                  </p>
+                  <div class="product-actions">
+                    <span class="product-price">$3.50</span>
+                    <button class="btn btn-buy-now">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card reveal">
+                <div class="product-img">
+                  <img src="images/Maple Brown Butter Cold Brew.jpg" alt="Maple Brown Butter Cold Brew" />
+                </div>
+                <div class="product-content">
+                  <h3 class="product-title">Maple Brown Butter Cold Brew</h3>
+                  <p class="product-desc">
+                    Our signature 12-hour cold brew, incredibly smooth with
+                    notes of toasted nuts and citrus.
+                  </p>
+                  <div class="product-actions">
+                    <span class="product-price">$3.50</span>
+                    <button class="btn btn-buy-now">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider-navigation">
+              <button class="slider-arrow left-arrow" aria-label="Previous Slide">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="slider-arrow right-arrow" aria-label="Next Slide">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story" id="story">
+      <img
+        class="imagetop"
+        src="images/beanssscopy.png"
+        alt="Coffee beans scattered on a surface"
+      />
+      <div class="story-content">
+        <div class="story-text reveal">
+          <h2>
+            From Passion to <br />
+            "<span
+              ><img
+                class="logoimage"
+                src="images/beanlogo-removebg-preview.png"
+                alt="Brew Haven Logo Icon"
+            />Brew</span
+            >
+            Haven "
+          </h2>
+          <p>
+            Our journey at "Brew Haven" began in a small kitchen, driven by a
+            simple obsession: the perfect cup of coffee. We saw coffee not just
+            as a drink, but a daily ritual and a chance to connect. This passion
+            sparked a question: "Why not share this with the world?"
+          </p>
+          <p>
+            That's how "Brew Haven" was born. Our aim wasn't just to sell
+            coffee, but to create a true sanctuary for coffee lovers. We spent
+            months sourcing the finest beans globally and perfecting every brew.
+          </p>
+          <p>
+            What started modestly has, thanks to your support, become the "Brew
+            Haven" you see today. We're proud of every cup and every smile. We
+            promise an unforgettable coffee experience that embodies our deep
+            passion. Because for us, every cup is a story.
+          </p>
+          <p class="thank-you-message">
+            Thank you for being part of our journey !
+          </p>
+          <a href="#contact" class="btn btn-primary">Discover More</a>
+        </div>
+        <div class="story-image reveal">
+          <img src="images/spilledcoffee.png" alt="Spilled coffee beans and cup" />
+        </div>
+      </div>
+      <img
+        class="imagebottom"
+        src="images/light-grunge-coffee-background-with-stone-texture-copy-space-top-view_124507-10657-removebg-preview.png"
+        alt="Grunge coffee background"
+      />
+    </section>
+
+    <section class="testimonials glass-light-bg" id="testimonials">
+      <div class="section-container">
+        <div class="section-title reveal">
+          <h2 class="text-dark">What Our Customers Say</h2>
+          <p class="text-dark">
+            The true measure of our craft is in the smiles – hear from those who've experienced the Brew Haven difference.
+          </p>
+        </div>
+
+        <div class="carousel-wrapper">
+          <div class="reviews-carousel" id="reviewsCarousel">
+            <div class="review-card" style="animation-delay: 0.1s">
+              <div class="review-author">
+                <div class="author-avatar">
+                  <img src="images/customer1.png" alt="Sarah Johnson">
+                </div>
+                <div class="author-info">
+                  <h3>Sarah Johnson</h3>
+                </div>
+              </div>
+              <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <p class="review-text">"The cold brew here is life-changing! I come every morning before work. The baristas know my order by heart and always make me feel welcome."</p>
+            </div>
+
+            <div class="review-card" style="animation-delay: 0.2s">
+              <div class="review-author">
+                <div class="author-avatar">
+                  <img src="images/customer2.png" alt="Michael Chen">
+                </div>
+                <div class="author-info">
+                  <h3>Michael Chen</h3>
+                </div>
+              </div>
+              <div class="review-stars" aria-label="4.5 out of 5 stars">★★★★☆</div>
+              <p class="review-text">"Perfect spot to work remotely. Fast WiFi, great coffee, and the quiet corner booths are my favorite. The seasonal pumpkin latte is incredible!"</p>
+            </div>
+
+            <div class="review-card" style="animation-delay: 0.3s">
+              <div class="review-author">
+                <div class="author-avatar">
+                  <img src="images/customer3.jpg" alt="Margaret">
+                </div>
+                <div class="author-info">
+                  <h3>Margaret</h3>
+                </div>
+              </div>
+              <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <p class="review-text">"Our Saturday tradition! We love the cozy atmosphere and the staff treats us like family. The cinnamon rolls are to die for!"</p>
+            </div>
+          </div>
+
+          <div class="carousel-button-wrapper">
+            <button class="carousel-button left" aria-label="Previous review" id="prevBtn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button class="carousel-button right" aria-label="Next review" id="nextBtn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section-title reveal">
+        <h2>Visit Us Today</h2>
+      </div>
+      <div class="contact-container">
+        <div class="contact-info reveal">
+          <h3>Hours & Info</h3>
+          <div class="info-item">
+            <div class="info-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <div class="info-content">
+              <h4>Opening Hours</h4>
+              <p>
+                Monday - Friday: 7:00 AM - 7:00 PM<br />
+                Saturday - Sunday: 8:00 AM - 6:00 PM
+              </p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div class="info-content">
+              <h4>Our Location</h4>
+              <p>
+                123 Coffee Lane, Artisan Quarter<br />
+                Downtown, Cityville 10001
+              </p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                ></path>
+              </svg>
+            </div>
+            <div class="info-content">
+              <h4>Get in Touch</h4>
+              <p>
+                Phone: (123) 456-7890<br />
+                Email: hello@brewhaven.com
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-map reveal">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10000!2d-74.0060!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDQ5JzIyLjQiTiA3NMKwMTUnNDguNSJX!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-col reveal">
+            <h3>About Brew Haven</h3>
+            <p>Brew Haven is passionately dedicated to serving exceptional, ethically sourced coffee, fostering community, and delivering an unforgettable experience with every cup.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"> <!-- SVG Facebook --></a>
+                <a href="#" aria-label="Instagram"> <!-- SVG Instagram --></a>
+                <a href="#" aria-label="Twitter"> <!-- SVG Twitter --></a>
+            </div>
+        </div>
+
+        <div class="footer-col reveal">
+            <h3>Quick Links</h3>
+            <ul class="quick-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#featured">Menu</a></li>
+                <li><a href="#story">Our Story</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col reveal">
+            <h3>Newsletter</h3>
+            <p>Subscribe to receive exclusive updates on our newest brews, special events, and irresistible offers directly in your inbox.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your Email Address" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2024 Brew Haven. All rights reserved.</p>
+    </div>
+</footer>
+
+<style>
+  :root {
+    --dark-brown: #3a2e26;
+    --cream: #f5f1e9;
+    --highlight: #c49b63;
+    --light-brown: #8b6d5c;
+    --text-light: #dcd6cf;
+  }
+
+  footer {
+    background-color: var(--dark-brown);
+    color: var(--cream);
+    padding: 4rem 8%;
+    font-size: 0.95rem;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto 3rem auto;
+  }
+
+  .footer-col {
+    flex: 1;
+    min-width: 280px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+
+  .footer-col.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .footer-col h3 {
+    color: var(--highlight);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-col p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .social-links a {
+    color: var(--cream);
+    font-size: 1.3rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+
+  .social-links a:hover {
+    color: var(--highlight);
+    transform: translateY(-3px);
+  }
+
+  .quick-links {
+    list-style: none;
+  }
+
+  .quick-links li {
+    margin-bottom: 0.8rem;
+  }
+
+  .quick-links a {
+    color: var(--cream);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .quick-links a:hover {
+    color: var(--highlight);
+  }
+
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .newsletter-form input {
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--light-brown);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--text-light);
+    font-size: 1rem;
+    outline: none;
+  }
+
+  .newsletter-form input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .newsletter-form button {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    background-color: var(--highlight);
+    color: var(--dark-brown);
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .newsletter-form button:hover {
+    background-color: var(--light-brown);
+    color: var(--text-light);
+  }
+
+  .footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 3rem;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+
+  .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
